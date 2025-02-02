@@ -3,32 +3,28 @@
   margin: 0;
 }
 
-body {
-  font-family: sans-serif;
-}
-
 .wrapper {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   gap: 16px;
 }
 
 .grid {
   display: grid;
-  max-width: 300px;
-  width: 100%;
-  padding: 20px;
-  gap: 20px;
-  border: 1px solid #000;
+  height: 300px;
+  width: 300px;
+ gap: 10px;
+ padding: 5px;
+ border: 1px solid #000;
 }
 
 .cell {
   background-color: transparent;
   border: 1px solid #000;
-  height: 0;
-  padding-bottom: 100%;
+ 
 }
 
 .cell-activated {

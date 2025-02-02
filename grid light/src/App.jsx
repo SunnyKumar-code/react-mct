@@ -1,15 +1,7 @@
 import { useState } from "react";
+import Cell from "./Cell";
 
-function Cell({ filled, onClick, isDisabled }) {
-  return (
-    <button
-      type="button" 
-      disabled={isDisabled}
-      onClick={onClick}
-      className={filled ? "cell cell-activated" : "cell"}
-    />
-  );
-}
+
 
 export default function App() {
   const [activatedCells, setActivatedCells] = useState([]);
@@ -63,6 +55,7 @@ export default function App() {
             onClick={() => handleCellClick(index)}
             isDisabled={activatedCells.includes(index) || isDeactivating}
           />
+          
         ))}
       </div>
     </div>
