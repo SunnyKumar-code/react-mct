@@ -35,7 +35,7 @@ function App() {
         <div className={`light ${activeLight === 'green' ? 'green' : ''}`}></div>
       </div>
       <div className="timer">
-        <span>{time}</span>
+        <span>{time}</span><span>second</span>
       </div>
     </div>
   );
